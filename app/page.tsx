@@ -1,3 +1,3 @@
 export default function HomePage() {
-  return <main>Audiophile Ecommerce Website Start</main>;
+  return <h2>Home</h2>;
 }
