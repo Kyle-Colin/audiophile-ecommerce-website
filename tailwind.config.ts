@@ -7,5 +7,12 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   plugins: [],
+  // theme: {
+  //   fontFamily: {
+  //     'sans': [],
+  //     'serif': [],
+  //     'mono': ['manrope']
+  //   }
+  // }
 };
 export default config;
