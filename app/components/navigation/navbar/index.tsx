@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const Navbar = ({ toggle }: { toggle: () => void }) => {
   return (
-        <nav className="bg-white dark:bg-black sticky w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 ">
+        <nav className="bg-white dark:bg-black w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 ">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4 py-8">
                 <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false" onClick={toggle}>
                         <span className="sr-only">Open main menu</span>
@@ -23,22 +23,22 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                     <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-black md:dark:bg-black dark:border-black uppercase text-sm">
                         <li>
                             <Link href="/">
-                                <p className="text-white">Home</p>
+                                <p className="text-white hover:underline">Home</p>
                             </Link>
                         </li>
                         <li>
                             <Link href="/headphones">
-                                <p className="text-white">Headphones</p>
+                                <p className="text-white hover:underline">Headphones</p>
                             </Link>
                         </li>
                         <li>
                         <Link href="/speakers">
-                                <p className="text-white">Speakers</p>
+                                <p className="text-white hover:underline">Speakers</p>
                             </Link>
                         </li>
                         <li>
                         <Link href="/earphones">
-                                <p className="text-white">Earphones</p>
+                                <p className="text-white hover:underline">Earphones</p>
                             </Link>
                         </li>
                     </ul>
