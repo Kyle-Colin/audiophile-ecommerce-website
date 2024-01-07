@@ -1,3 +1,5 @@
+import Text from "./components/text";
+
 export default function HomePage() {
-  return <h2>Home</h2>;
+  return <Text variant="label">ASDFASDFASDF</Text>;
 }
