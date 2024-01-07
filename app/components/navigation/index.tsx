@@ -8,7 +8,7 @@ const desktopMediaQuery = '(min-width: 768px)'
 
 const Navigation = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [isDesktop, setIsDesktop] = useState()
+    const [isDesktop, setIsDesktop] = useState(false)
 
     const toggle = () => {
         setIsOpen(!isOpen);
@@ -21,7 +21,7 @@ const Navigation = () => {
 
       const query = window.matchMedia(desktopMediaQuery);
 
-      function handleQueryChange(queryEvent) {
+      function handleQueryChange(queryEvent: any) {
         setIsDesktop(queryEvent.matches);
         if (isOpen) {
           setIsOpen(false);
